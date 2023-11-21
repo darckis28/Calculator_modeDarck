@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container darck">
+      <div class="input" id="input"></div>
+      <div class="circle"></div>
+      <table>
+        <tr>
+          <td><button class="btn_color" id="delete">C</button></td>
+          <td><button class="btn_color" id="/">/</button></td>
+          <td><button class="btn_color" id="*">*</button></td>
+          <td><button class="btn_color" id="delete_last"><</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn_number" id="7">7</button></td>
+          <td><button class="btn_number" id="8">8</button></td>
+          <td><button class="btn_number" id="9">9</button></td>
+          <td><button class="btn_color" id="-">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn_number" id="4">4</button></td>
+          <td><button class="btn_number" id="5">5</button></td>
+          <td><button class="btn_number" id="6">6</button></td>
+          <td><button class="btn_color" id="+">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn_number" id="1">1</button></td>
+          <td><button class="btn_number" id="2">2</button></td>
+          <td><button class="btn_number" id="3">3</button></td>
+          <td rowspan="2">
+            <button id="btn_result" class="btn_color">=</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="btn_number" id="0">0</button></td>
+          <td><button class="btn_number" id=".">.</button></td>
+          <td>
+            <button class="btn_number" id="00">00</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

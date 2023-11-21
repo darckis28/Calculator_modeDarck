@@ -1,0 +1,108 @@
+:root {
+  --color-dark: #1a1b28;
+  --color-dark-light: #1e2435;
+  --color-booton: #52c9dc;
+  --color-light: #ffffff;
+  --color-letter: #454545;
+  --letter: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bde9f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--letter);
+}
+.container {
+  background-color: var(--color-light);
+  width: 290px;
+  position: relative;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(237, 233, 33);
+  box-shadow: 0px 0px 5px 5px rgba(237 233 33/0.2);
+  z-index: 1;
+  top: 8px;
+  right: 9px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.circle::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(2, 2, 2);
+  z-index: 2;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  transform-origin: top left;
+  transform: translate(21px, -30px);
+  transition: all 0.2s ease;
+}
+.container.darck .circle::after {
+  transform: translate(3px, -3px);
+}
+.input {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5px 15px;
+  font-size: 2em;
+  color: var(--color-letter);
+  overflow: hidden;
+}
+.container button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+  border: none;
+  color: var(--color-letter);
+}
+table {
+  background-color: transparent;
+}
+.container button:hover {
+  transform: scale(1.1);
+}
+.container.darck {
+  background-color: var(--color-dark);
+}
+.container.darck .btn_number {
+  background-color: var(--color-dark-light);
+  color: var(--color-light);
+}
+.container.darck .input {
+  color: var(--color-light);
+}
+#btn_result {
+  height: 130px;
+}
+.btn_color {
+  background-color: var(--color-booton);
+}
+.btn_number {
+  background-color: #b5acac;
+}
